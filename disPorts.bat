@@ -1,6 +1,6 @@
 @echo off
 REM Arcep disPorts: Preuve de concept d'un test de blocage de ports pour Windows.
-REM Le script proposé pour inciter le développement d'une véritable application pour réaliser ces tests.
+REM Le script est proposé pour inciter le développement d'une véritable application pour réaliser ces tests.
 REM Version 0.1 - Script perfectible, crée par Vivien GUEANT
 REM Vous êtes invités à contribuer sur https://github.com/ARCEP-dev/disPorts - License MIT
 REM Les problèmes détectés ne correspondent pas nécessairement à des problématiques de neutralité du net.
