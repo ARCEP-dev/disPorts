@@ -2,7 +2,7 @@
 
 ## Contexte
 
-Le script proposé pour inciter le développement d'une véritable application pour réaliser ces tests.
+Le script est proposé pour inciter le développement d'une véritable application pour réaliser ces tests.
 
 Vous êtes invités à contribuer sur https://github.com/ARCEP-dev/disPorts - License MIT
 
