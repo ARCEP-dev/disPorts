@@ -39,7 +39,7 @@ echo "##             | (_| | \__ \ |  | (_) | |  | |_\__ \          ##"
 echo "##              \__,_|_|___/_|   \___/|_|   \__|___/          ##"
 echo "##                                                            ##"
 echo "## TEST DE DEBIT ET DE NEUTRALITE, en http et en https        ##"
-echo "## Test chaque port, du port TCP 1 au port TCP 32767          ##"
+echo "## Test chaque port, du port TCP 1 au port TCP 9199           ##"
 echo "## Test r‚alis‚ en IPv4, puis en IPv6 si IPv6 est disponible  ##"
 echo "## Rien n'est ‚crit sur le disque dur. D‚bit mesur‚ sur 1sec  ##"
 echo "################################################################"
@@ -166,7 +166,7 @@ echo IPv4 Port443    https: %Debit_utileMB%,%Debit_utileDE% Mb/s - %sizeKO% Ko (
 set port=0
 :bv4down
 set /a port = port + 1
-if %port%==32768 goto finbv4down
+if %port%==9200 goto finbv4down
 REM IPv4: Download port %port% (https)
 for /f "tokens=1-6" %%i in ('curl --max-time 1 -4 -s --write-out "%%{time_namelookup} %%{time_connect} %%{time_starttransfer} %%{time_total} %%{size_download}" -o NUL https://%mire%:%port%/1G.iso') do (
 	set namelookup=%%i
